@@ -1,0 +1,416 @@
+.ref {
+  font-size: 20px;
+}
+
+.backgroundMeasure {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom right, #577461, #809e9e, #506e61);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outerRemoveMeasure {
+  position: relative;
+  width: 28px;
+}
+
+.innerRemoveMeasure {
+  width: inherit;
+  text-align: center;
+}
+
+.labelRemoveMeasure {
+  font-size: 0.9em;
+  line-height: 2em;
+  text-transform: uppercase;
+  color: #0e5619;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.innerRemoveMeasure:before,
+.innerRemoveMeasure:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: inherit;
+  background: #045310;
+  left: 0;
+  transition: all 0.3s ease-in;
+}
+
+.innerRemoveMeasure:before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.innerRemoveMeasure:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.outerRemoveMeasure:hover .labelRemoveMeasure {
+  opacity: 1;
+}
+
+.outerRemoveMeasure:hover .innerRemoveMeasure:before,
+.outerRemoveMeasure:hover .innerRemoveMeasure:after {
+  transform: rotate(0);
+  width: 55px;
+}
+
+.outerRemoveMeasure:hover .innerRemoveMeasure:before {
+  top: 0;
+}
+
+.outerRemoveMeasure:hover .innerRemoveMeasure:after {
+  bottom: 0;
+}
+/* ----------------------------------------- */
+.content-table-measure {
+  border-collapse: collapse;
+  white-space: normal;
+  min-width: 400px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.content-table-measure thead tr {
+  color: #d2f3da;
+  text-align: center;
+  font-weight: bold;
+  height: 29px;
+}
+
+.content-table-measure .cell-header-measure {
+  padding: 1% 1%;
+  border: 1px solid white;
+  white-space: normal;
+  background-color: #217040;
+}
+
+.content-table-measure .cell-address {
+/* max-width: 100%; */
+}
+
+.content-table-measure .cell-date {
+/* min-width: 80px; */
+}
+
+.content-table-measure .cell-product {
+width: 120px;
+}
+
+.content-table-measure .cellHeaderMeasure-last {
+  padding: 1% 1%;
+  white-space: normal;
+  font-size: 12px;
+  background-color: transparent;
+  min-width:20%;
+}
+
+.div-cell-measure {
+  word-wrap: break-word;
+}
+.content-table-measure td {
+  padding-top: 8px;
+  white-space: normal;
+  font-size: 65%;
+}
+
+.content-table-measure tbody tr:nth-of-type(even) .tableRowCellMeasure {
+  background-color: #a8d8b8e3;
+  border: 1px solid white;
+  vertical-align: middle;
+}
+
+.content-table-measure tbody .table-row-button-measure {
+  background-color: transparent;
+  text-align: initial;
+  padding-left: 7px;
+  vertical-align: middle;
+}
+
+.content-table-measure th:last-child {
+  /* background-color: transparent; */
+  /* width: 1%; */
+}
+
+.content-table-measure tbody tr:nth-of-type(odd) .tableRowCellMeasure {
+  background-color: #b9e7c8;
+  border: 1px solid white;
+  vertical-align: middle;
+}
+
+.content-table-measure tbody tr.active-row {
+  font-weight: bold;
+  color: #152321;
+}
+
+.wrap-table-measure {
+  width: 100%;
+  height: 50%;
+  max-width: 139%;
+  padding-right: 20px;
+  padding-left: 30px;
+  font-weight: 600;
+}
+
+.centerMeasureDiv {
+  position: relative;
+  left: 0%;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.plusButtonMeasureTable {
+  border: 2px solid lightgrey;
+  background-color: #fff;
+  font-size: 140%;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 999px;
+  position: relative;
+}
+
+.plusButtonMeasureTable::after,
+.plusButtonMeasureTable::before {
+  content: '';
+  display: block;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plusButtonMeasureTable::before {
+  height: 1em;
+  width: 0.2em;
+}
+
+.plusButtonMeasureTable::after {
+  height: 0.2em;
+  width: 1em;
+}
+
+.wrapListMeasureFileCellTable ul:last-of-type {
+  border-bottom: 1px black;
+}
+.wrapListMeasureFileCellTable ul {
+  border-bottom: 1px solid #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #6c6c6ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-bg-confirm {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-all {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  border: 1px solid #ffffff;
+  border-color: #000000;
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.container-measure {
+  height: auto;
+  width: 700px;
+  background-color: #d2f3da;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 50px black;
+}
+
+.container-measure .title {
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container-measure .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #219633, #0e822f);
+}
+
+.contentMeasure form .user-details-measure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details-measure .input-box-measure {
+  margin-bottom: 15px;
+  width: 46%;
+}
+
+.user-details-measure .input-box-measure input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.user-details-measure .input-box-measure input:focus,
+.user-details-measure .input-box-measure input:valid {
+  border-color: #000000;
+}
+
+form .input-box-measure span.detailsMeasure {
+  display: block;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/*Existing Client Field - also imported in OfferRow*/
+.labelExistingClient {
+  font-size: 15.4px;
+  width: 46%;
+}
+
+.existingClient {
+  float: right;
+  border-radius: 10px;
+  height: 30px;
+  width: 46%;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+.necessaryFieldsMessage {
+  width: 30%;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.upperPartOfDiv {
+  margin-bottom: 20px;
+}
+
+.contentMeasure {
+  width: 100%;
+}
+
+.imageMeasureUpload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 200px;
+  padding-left: 86px;
+}
+
+#imageUpload {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.imageLink {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/*'search-container-buttons' is the name of the class
+given to search containers that are above tables with
+the last collumn consisting of (edit) buttons*/
+.search-container-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 44.75px;
+}
+
+@media (max-width: 670px){
+  .search-container{
+    justify-content: space-between;
+    padding-right: 1px;
+  }
+
+}
+
+.content-table-measure .cell-name {
+  min-width: 200px;
+}
+
+.content-table-measure .cell-header-measure {
+  min-width: 120px;
+}
+
+.content-table-measure .cell-product {
+  min-width: 130px;
+}
+
+@media (max-width: 990px) {
+
+  .content-table-measure .cell-date {
+    min-width: 80px;
+  }
+
+  .content-table-measure .cell-status {
+    min-width: 80px;
+  }
+
+  .wrap-table-measure {
+    padding-left: 1px;
+    padding-right: 0px;
+  }
+
+  .centerMeasureDiv {
+    padding-top: 10px;
+  }
+
+  .content-table-measure tbody .table-row-button-measure {
+    padding-left: 1px;
+  }
+
+  .search-container-buttons {
+    padding-right: 37.75px;
+  }
+}

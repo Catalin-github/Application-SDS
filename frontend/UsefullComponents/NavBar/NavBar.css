@@ -1,0 +1,44 @@
+.back-symbol {
+  height: 13px;
+  width: 12px;
+  margin-top: 5px;
+}
+
+.back-text {
+  font-size: 20px;
+  width: 170px;
+  margin-right: 5px;
+}
+
+.brand {
+  font-size: 23px;
+}
+
+.hide-option {
+  display: none;
+}
+
+.logout {
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.nav-option {
+  font-size: 20px;
+}
+
+.selected {
+  color: white;
+}
+
+.selected-page-name {
+  padding: 8px;
+}
+
+@media (min-width: 992px) {
+  .selected-mobile {
+    display: none;
+  }
+}

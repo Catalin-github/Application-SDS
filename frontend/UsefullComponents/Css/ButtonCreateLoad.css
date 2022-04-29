@@ -1,0 +1,123 @@
+.button-sds {
+  position: relative;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 0px 1px 1px #dbdbdb;
+  transition: 0.2s;
+}
+
+.button-sds:hover {
+  background-color: #2d3338;
+  animation-duration: 3s;
+}
+
+.create {
+  position: relative;
+}
+
+.load {
+  margin: 20px;
+  padding: 6px 16px;
+}
+
+.cancel {
+  float: left;
+  width: 46%;
+  margin-top: 20px;
+  font-size: 22px;
+  background-color: #6e6e6e;
+  box-shadow: 0px 0px 8px  #858585;
+
+}
+
+.submit {
+  float: right;
+  width: 46%;
+  margin-top: 20px;
+  font-size: 22px;
+  background-color: #6e6e6e;
+  box-shadow: 0px 0px 8px  #858585;
+
+}
+
+.start {
+  background-color: #386363;
+}
+
+.masuri {
+  background-color: #217040;
+}
+
+.oferte {
+  background-color: #2a96c0;
+}
+
+.comenzi {
+  background-color: #28325e;
+}
+
+.montaje {
+  background-color: #456b67;
+}
+
+.rame {
+  background-color: #50403b;
+}
+
+.sticla {
+  background-color: #253f94;
+}
+
+.clienti {
+  background-color: black;
+}
+
+.roluri {
+  background-color: #0b4b56;
+}
+
+.inactiv:hover {
+  background-color: #6e6e6e;
+  cursor: default;
+}
+
+.delete{
+  background-color: #c40000;
+}
+
+.create-offer{
+  margin-right: 0;
+}
+
+.create-measure {
+  margin-right: 3.5px;
+}
+
+@media (max-width: 500px) {
+  .create-measure, .create-offer{
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 391px) {
+  .create-measure, .create-offer{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 354px) {
+  .create-measure, .create-offer{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 333px) {
+  .create-measure, .create-offer{
+    font-size: 12.5px;
+  }
+}
